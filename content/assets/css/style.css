@@ -1,0 +1,239 @@
+* {
+	box-sizing: border-box;
+	font-family: Ubuntu-Light;
+	/* border: 1px dashed #00000026; */
+	/* margin: 1px; */
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+.fx-col {
+	display: flex;
+	flex-direction: column;
+	min-width: 986px;
+	max-width: 1366px;
+}
+
+.bg {
+	background: url('../1366x768_bg.jpg') fixed no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-align: center;
+}
+
+img {
+	display: block;
+	border-style: none;
+}
+
+main {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	width: 100%;
+}
+
+ul {
+	list-style-image: url('../image-icon-obj/bullet_go.png');
+}
+
+a {
+  color: #0b737b;
+  text-decoration: none;
+  text-shadow: 0 0 0 #000000a6;
+  letter-spacing: 0.2px;
+  font-family: Ubuntu;
+  /* font-weight: bold; */
+  font-size: 17px;
+}
+
+a:hover {
+	color: #a5571e;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #845f19;
+}
+
+.mr-fx-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* margin: 4px; */
+}
+
+.mr-fx-col {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+.pd-bl {
+	padding: 7px;
+}
+
+.mr-bl-bottom {
+	margin-bottom: 6px;
+}
+
+.mr-bl-right {
+	margin-right: 6px;
+}
+
+.block-container-cnt-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.block-container-cnt-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.by-games {
+	flex: 0 0 74%;
+}
+
+.by-new {
+	flex: 0 0 26%;
+}
+
+
+/** Header **/
+.bar {
+	background: #16838c;
+	display: block;
+	box-shadow: 0 0 34px 2px #00909c;
+	position: fixed;
+	min-width: 986px;
+	width: 100%;
+}
+
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 3px;
+}
+
+.h__caption-text {
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.h__caption-text > h1 {
+	color: #00929e;
+	font-size: 2em;
+	font-family: Dotf1;
+	text-shadow: -1px 1px 5px #000000;
+}
+
+.h__capt-page {
+	background-color: #006169;
+	padding: 4px 16px;
+	border-radius: 8px;
+	box-shadow: 0px 1px 0px 1px #31b4bf;
+}
+
+.h__capt-page > h2 {
+	color: #38beca;
+	font-family: OpenSansLight-Italic;
+	font-size: 1.4em;
+	letter-spacing: 1px;
+	text-shadow: 0 0 1px #000000;
+}
+
+.h__des-text {
+	margin-right: 10px;
+}
+
+.h__des-text > h1 {
+	border-bottom: 3px solid #2fa6af;
+	border-radius: 0px 0px 0px 7px;
+	color: #2aa58f;
+	font-family: UbuntuCondensed-Regular;
+	line-height: 34px;
+	letter-spacing: 0;
+	text-shadow: 1px 2px 3px #000;
+}
+/** Header End **/
+
+/** Main **/
+.wrapper-m {
+	background: #000000a6;
+	padding: 12px;
+	margin-top: 41px;
+	margin-bottom: 34px;
+}
+
+.brds {
+  background: #c9e3e6;
+  box-shadow: 0 0 5px 0 #fff, inset 0 0 13px 1px #00000085;
+  border: 1px solid #01181ad4;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.block-cnt-cpt {
+	background: #3faeb7;
+	border-radius: 4px;
+	box-shadow: 0 2px 10px 1px #064046;
+	padding: 3px 2px;
+	margin-bottom: 8px;
+}
+
+.block-cnt-cpt > h3 {
+	background: #10686f;
+	border-radius: 4px;
+	color: #eceeef;
+	font-family: PTSans-NarrowBold;
+	font-size: 1.3em;
+	text-shadow: -1px 1px 1px #559fa2;
+	letter-spacing: 4px;
+	padding: 1px 0 3px 0;
+}
+
+.block-container-cnt-col,
+.block-container-cnt-row {
+	background: #dbf0f3;
+	border-radius: 4px;
+	box-shadow: -1px 1px 6px 0 #0000008c, inset -1px 0px 0px 0px #0000008c;
+	padding: 2px 15px;
+}
+/** End Main **/
+
+
+/** Footer **/
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #104f52;
+	bottom: 0;
+	position: fixed;
+	padding: 0 15px;
+	min-width: 986px;
+	width: 100%;
+}
+
+footer div > p {
+	color: #00d5e6;
+	font-family: BlackJackRegular;
+	font-size: 1em;
+	letter-spacing: 0.3px;
+	margin: 8px 0;
+	text-shadow: 0 0 6px #000000d1;
+}
+
+.a-email p > span {
+	color: #f0ffff;
+}
+/** End Footer **/
