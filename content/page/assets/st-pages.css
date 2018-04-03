@@ -1,5 +1,6 @@
 .block-container-cnt-col > p {
 	font-size: 17px;
+	margin: 6px 0;
 }
 
 .block-container-cnt-col p > a {
@@ -9,4 +10,37 @@
   letter-spacing: 0.1px;
   font-family: Ubuntu;
   font-size: 16px;
+}
+
+.article__block-container {
+	box-shadow: 0 4px 7px -5px #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4px;
+}
+
+.fx-img-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.fx-img-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.img__block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 6px 8px 0 10px;
+}
+
+.img__block > img {
+	margin-bottom: 5px;
+}
+
+.img__block > h4 {
+	color: #1d6d6f;
 }
