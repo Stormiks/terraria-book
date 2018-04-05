@@ -1,9 +1,24 @@
-.block-container-cnt-col > p {
-	font-size: 17px;
-	margin: 6px 0;
+.section__inner-box, .aside {
+	background: #fff6b86e;
+	border-radius: 6px;
+	box-shadow: -1px 1px 6px 0 #000000d1, inset -1px 0px 0px 0px #00000087;
+	padding: 15px 20px;
 }
 
-.block-container-cnt-col p > a {
+.aside__grid b {
+	color: #a52a2a;
+	font-family: OpenSansLight-Italic;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.aside__grid p {
+	font-size: 17px;
+	line-height: 21px;
+	margin: 7px 15px;
+}
+
+.aside__grid p > a {
 	color: #326b00;
   text-decoration: none;
   text-shadow: 0 0 0 #000000a6;
@@ -12,35 +27,84 @@
   font-size: 16px;
 }
 
-.article__block-container {
+.aside__grid > p > img {
+	float: left;
+	margin-right: 2px;
+}
+
+.aside__tips-tricks-box {
+	margin: 23px 4px 10px 4px;
+}
+
+.aside__tips-tricks-box > h3 {
+  background-color: #45bcc5;
+  box-shadow: 0 0 12px 1px #00000063;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 1px;
+  padding: 0px 9px 8px 9px;
+}
+
+.aside__tips-tricks-box h3 > span {
+	color: #0d686f;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: OpenSansLight-Italic;
+	letter-spacing: 1px;
+	text-shadow: -2px 1px 0px #000000c4;
+	border-bottom: 2px solid #0a3a3e;
+	padding-bottom: 2px;
+}
+
+.aside__tips-tricks-box > p {
+	background-color: #e6bb7a;
+	box-shadow: 0 7px 19px -5px #000000b5;
+	border-radius: 3px 3px 9px 9px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 8px;
+}
+
+.aside__tips-tricks-box > p > a {
+	color: #a92424;
+	font-weight: bold;
+	text-shadow: none;
+}
+
+.aside__tips-tricks-box > p > a:hover {
+	text-decoration: underline;
+}
+
+.aside__tips-tricks-box > p > a:visited {
+	color: #484141;
+}
+
+.aside__container--grid {
 	box-shadow: 0 4px 7px -5px #000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 4px;
+	margin-bottom: 12px;
+	padding-bottom: 6px;
 }
 
-.fx-img-col {
+.img__box-row {
 	display: flex;
-	flex-direction: column;
-}
-
-.fx-img-row {
-	display: flex;
+	align-items: center;
 	flex-direction: row;
 }
 
-.img__block {
-	display: flex;
+.img__content-col {
 	align-items: center;
+	display: flex;
 	flex-direction: column;
 	margin: 6px 8px 0 10px;
 }
 
-.img__block > img {
+.img__content-col > img {
 	margin-bottom: 5px;
 }
 
-.img__block > h4 {
+.img__content-col > h4 {
 	color: #1d6d6f;
 }

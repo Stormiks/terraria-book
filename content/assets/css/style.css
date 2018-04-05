@@ -233,7 +233,7 @@ footer div > p {
 	text-shadow: 0 0 6px #000000d1;
 }
 
-.a-email p > span {
+.footer__email p > span {
 	color: #f0ffff;
 }
 /** End Footer **/
