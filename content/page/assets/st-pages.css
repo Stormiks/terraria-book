@@ -32,14 +32,22 @@
   font-family: Ubuntu;
   font-size: 16px;
 }
-
-.aside__grid > p > img {
+.aside__grid .aside__img-left {
   float: left;
+}
+
+.aside__grid .aside__img-right {
+	float: right;
+}
+
+.aside__img-left,
+.aside__img-right {
   background-image: radial-gradient(circle farthest-side, #9a7728, #ffffff 208px);
   border-radius: 11px;
   margin-right: 8px;
   padding: 3px;
 }
+
 
 .aside__tips-tricks-box {
 	margin: 36px 22px 31px 22px;
