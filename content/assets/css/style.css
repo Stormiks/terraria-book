@@ -1,8 +1,6 @@
 * {
 	box-sizing: border-box;
 	font-family: Ubuntu-Light;
-	/* border: 1px dashed #00000026; */
-	/* margin: 1px; */
 }
 
 html, body {
@@ -76,7 +74,7 @@ a::before {
 	margin-left: -21px;
 	padding: 4px 9px;
 	text-decoration: underline;
-	}
+}
 
 a:hover::before,
 a:hover::after {
@@ -102,7 +100,6 @@ a:visited {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	/* margin: 4px; */
 }
 
 .mr-fx-col {
