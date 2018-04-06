@@ -18,6 +18,12 @@
 	margin: 7px 15px;
 }
 
+.desc-lang-en {
+	color: chocolate;
+	text-shadow: -1px 1px 8px #000;
+	letter-spacing: 2px;
+}
+
 .aside__grid p > a {
 	color: #326b00;
   text-decoration: none;
@@ -28,12 +34,15 @@
 }
 
 .aside__grid > p > img {
-	float: left;
-	margin-right: 2px;
+  float: left;
+  background-image: radial-gradient(circle farthest-side, #9a7728, #ffffff 208px);
+  border-radius: 11px;
+  margin-right: 8px;
+  padding: 3px;
 }
 
 .aside__tips-tricks-box {
-	margin: 23px 4px 10px 4px;
+	margin: 36px 22px 31px 22px;
 }
 
 .aside__tips-tricks-box > h3 {
