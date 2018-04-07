@@ -76,14 +76,14 @@ a::before {
 	text-decoration: underline;
 }
 
-a:hover::before,
-a:hover::after {
+.tooltip:hover::before,
+.tooltip:hover::after {
 	opacity: 1;
 	visibility: visible;
 	margin-bottom: 0;
 }
 
-a::after {
+.tooltip::after {
 	content: "";
 	border-top: 10px solid #000000b3;
 	border-left: 10px solid transparent;
@@ -92,7 +92,7 @@ a::after {
 	margin-left: 9px;
 }
 
-a:visited {
+.tooltip:visited {
 	color: #845f19;
 }
 
@@ -176,14 +176,18 @@ a:visited {
 	box-shadow: 0px 1px 0px 1px #31b4bf;
 }
 
+.h__capt-page h2 > a,
 .h__capt-page > h2 {
 	color: #38beca;
 	font-family: OpenSansLight-Italic;
-	font-size: 1.4em;
+	font-size: 0.9em;
 	letter-spacing: 1px;
 	text-shadow: 0 0 1px #000000;
 }
 
+.h__capt-page > h2 {
+	font-size: 1.6em;
+}
 .h__des-text {
 	margin-right: 10px;
 }
