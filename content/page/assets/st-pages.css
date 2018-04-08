@@ -1,8 +1,67 @@
+.table {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.aside__t-terraria {
+	background-color: #5dbf9eba;
+	border: 1px solid #3bab9f;
+	padding: 2px;
+}
+
+.terraria {
+	border-radius: 0 0 4px 4px;
+	margin: 4px;
+}
+
+.terraria > caption {
+	color: #000;
+	border-radius: 6px 6px 0 0;
+	background: #6cb5c1;
+	font-size: 17px;
+	text-shadow: 0 0 16px #fff;
+	padding: 6px;
+}
+
+
+th, td {
+	border-radius: 3px;
+	border: 1px solid #0000003b;
+	padding: 1px;
+}
+
+th {
+	background-color: #93bdb5;
+	color: #063c42;
+	text-shadow: none;
+}
+
+td {
+	background-color: #a0d5da;
+	font-size: 15px;
+}
+
+td > img {
+	margin: auto;
+}
+
+.article__container {
+	/* background: #b2e1e4; */
+	/* border-radius: 12px; */
+}
+
+.article__container ul {
+	list-style-image: none;
+}
+
 .section__inner-box, .aside {
 	background: #fff6b86e;
 	border-radius: 6px;
 	box-shadow: -1px 1px 6px 0 #000000d1, inset -1px 0px 0px 0px #00000087;
 	padding: 15px 20px;
+	margin: 7px 15px 15px 15px;
 }
 
 .aside__grid b {
@@ -10,6 +69,10 @@
 	font-family: OpenSansLight-Italic;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.aside__grid p > b {
+	color: #275d5f;
 }
 
 .aside__grid p {
@@ -47,7 +110,6 @@
   margin-right: 8px;
   padding: 3px;
 }
-
 
 .aside__tips-tricks-box {
 	margin: 36px 22px 31px 22px;
@@ -111,6 +173,15 @@
 	flex-direction: row;
 }
 
+.img__content {
+	margin: 5px;
+	padding: 3px;
+}
+
+.img__content > img {
+	margin: auto;
+}
+
 .img__content-col {
 	align-items: center;
 	display: flex;
@@ -119,9 +190,27 @@
 }
 
 .img__content-col > img {
-	margin-bottom: 5px;
+	margin-bottom: 0;
 }
 
-.img__content-col > h4 {
+.img__content > h4 {
 	color: #1d6d6f;
+	margin-top: 8px;
+}
+
+.list-container {
+	/* width: fit-content; */
+	/* box-shadow: 0 0 3px 0 #000; */
+	/* border-radius: 8px; */
+	/* background: #b0d0ca; */
+	/* padding: 1px 2px 1px 14px; */
+}
+
+.list-number,
+.list-item {
+	background: #d7ecbc;
+	box-shadow: 0 0 10px -2px #000;
+	border-radius: 14px;
+	padding: 16px 25px 21px 30px;
+	width: fit-content;
 }
