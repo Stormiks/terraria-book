@@ -7,12 +7,13 @@ html, body {
 	height: 100%;
 	margin: 0;
 	width: 100%;
+	/* min-width: 760px; */
 }
 
 .fx-col {
 	display: flex;
 	flex-direction: column;
-	min-width: 986px;
+	/* min-width: 986px; */
 	max-width: 1366px;
 }
 
@@ -31,13 +32,14 @@ img {
 }
 
 main {
-	display: flex;
+	/* display: flex; */
 	height: 100%;
-	flex-direction: column;
+	/* flex-wrap: wrap; */
+	/* flex-direction: column; */
 	width: 100%;
 }
 
-ul {
+li {
 	list-style-image: url('../image-icon-obj/bullet_go.png');
 }
 
@@ -111,52 +113,22 @@ a::before {
 	justify-content: space-around;
 }
 
-.mr-fx-col {
-	display: flex;
-	flex-direction: column;
+.mr-inner-box {
 	margin: 5px;
+	padding: 0 25px;
 }
-
-.pd-bl {
-	padding: 7px;
-}
-
-.mr-bl-bottom {
-	margin-bottom: 6px;
-}
-
-.mr-bl-right {
-	margin-right: 6px;
-}
-
-.block-container-cnt-col {
-	display: flex;
-	flex-direction: column;
-}
-
-.block-container-cnt-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-.by-games {
-	flex: 0 0 74%;
-}
-
-.by-new {
-	flex: 0 0 26%;
-}
-
 
 /** Header **/
+header {
+	/* min-width: 722px; */
+}
 .bar {
 	background: #16838c;
 	display: block;
 	box-shadow: 0 0 34px 2px #00909c;
 	position: fixed;
-	min-width: 986px;
 	width: 100%;
+	z-index: 2;
 }
 
 .top-bar {
@@ -220,23 +192,47 @@ a::before {
 	margin-bottom: 34px;
 }
 
-.brds {
+.section__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section__inner {
+	display: flex;
+	flex-direction: column;
+	align-self: normal;
   background: #c9e3e6;
   box-shadow: 0 0 5px 0 #fff, inset 0 0 13px 1px #00000085;
   border: 1px solid #01181ad4;
   border-radius: 5px;
-  padding: 8px;
+  padding: 6px;
+  margin: 6px;
 }
 
-.block-cnt-cpt {
+.by-game__text-box > p {
+	line-height: 20px;
+}
+
+.by-game__text-box > p > b {
+	color: #045c71;
+	text-decoration: underline solid #d2691e;
+}
+
+.l-item {
+	margin: 4px 0px;
+}
+
+.section__title-text {
 	background: #3faeb7;
 	border-radius: 4px;
 	box-shadow: 0 2px 10px 1px #064046;
 	padding: 3px 2px;
-	margin: 12px 7px 4px 7px;
+	margin: 1px 2px 4px 2px;
 }
 
-.block-cnt-cpt > h3 {
+.title-text {
+	display: block;
 	background: #10686f;
 	border-radius: 4px;
 	color: #eceeef;
@@ -244,7 +240,44 @@ a::before {
 	font-size: 1.3em;
 	text-shadow: -1px 1px 1px #559fa2;
 	letter-spacing: 4px;
-	padding: 1px 0 3px 0;
+	padding: 0px 0 3px 0;
+	width: 100%;
+}
+
+.content-box {
+	align-items: stretch;
+	display: flex;
+	height: 100%;
+	justify-content: space-around;
+	background: #dbf0f3;
+	border-radius: 4px;
+	box-shadow: -1px 1px 6px 0 #0000008c, inset -1px 0px 0px 0px #0000008c;
+	padding: 9px;
+	margin: 4px;
+}
+
+.by-game__game-box {
+  flex: 1 0 0;
+}
+
+.version-game__game-box {
+	min-width: 343px;
+}
+
+.new-user__game-box {
+	min-width: 339px;
+}
+
+.object-game__game-box {
+	flex: 1 0 0;
+}
+
+.mechanics-game__game-box {
+	min-width: 453px;
+}
+
+.enemy-game__game-box {
+	flex: 1 0 0;
 }
 
 .block-container-cnt-col,
@@ -252,7 +285,8 @@ a::before {
 	background: #dbf0f3;
 	border-radius: 4px;
 	box-shadow: -1px 1px 6px 0 #0000008c, inset -1px 0px 0px 0px #0000008c;
-	padding: 8px 15px;
+  padding: 6px 16px;
+  margin: 0px 8px;
 }
 /** End Main **/
 
@@ -266,7 +300,7 @@ footer {
 	bottom: 0;
 	position: fixed;
 	padding: 0 15px;
-	min-width: 986px;
+	/* min-width: 722px; */
 	width: 100%;
 }
 
@@ -283,3 +317,102 @@ footer div > p {
 	color: #f0ffff;
 }
 /** End Footer **/
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.section__container {
+		flex-wrap: wrap;
+	}
+
+	.section__inner {
+		/* width: 100%; */
+	}
+
+	.sidebar__list-item {
+		margin: 0;
+	}
+
+	.object-game__grid {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.enemy-game__grid {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.enemy-game__sidebar {
+		margin-bottom: 5px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.section__container {
+		flex-wrap: wrap;
+	}
+
+	.section__inner {
+		width: 100%;
+	}
+
+	.sidebar__list-item {
+		margin: 0;
+	}
+
+	.content-box {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.version-game__grid,
+	.new-user__grid {
+		justify-content: center;
+	}
+
+	.enemy-game__sidebar {
+		margin-bottom: 5px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+	.top-bar {
+		display: block;
+	}
+
+	.wrapper-m {
+		margin-top: 116px;
+	}
+
+	.section__inner {
+		width: 100%;
+	}
+
+	.section__container {
+		flex-wrap: wrap;
+	}
+
+	.sidebar__list-item {
+		margin: 0;
+	}
+
+	.content-box {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.object-game__grid {
+		justify-content: space-around;
+	}
+
+	.mechanics-game__game-box {
+		min-width: auto;
+	}
+
+	.enemy-game__sidebar {
+		margin-bottom: 5px;
+	}
+}
