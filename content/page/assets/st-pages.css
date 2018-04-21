@@ -127,7 +127,8 @@ td > img {
 	padding: 3px;
 }
 
-.img-float-left {
+.img-float-left,
+.list-item li a > img {
   float: left;
 }
 
