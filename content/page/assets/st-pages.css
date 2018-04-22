@@ -350,3 +350,11 @@ b.сongratulations-text {
 }
 
 /** End Sidebar Navigation Page **/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.img__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
