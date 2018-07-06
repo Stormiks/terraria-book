@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="terraria, book, help">
-		<meta name="description" content="Рыбалка">
+		<meta name="description" content="Инструменты">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Инструменты</title>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/image-icon-obj/favicon.ico" />
@@ -14,16 +14,26 @@
 	<body class="fx-col bg">
 		<script src="assets/js/modal-window.js"></script>
 		
-		<header class="bar">
-			<div class="top-bar">
-				<div class="h__caption-text">
+		<header>
+			<div class="header-container-top-bar">
+				<div class="h-caption-logo">
 					<h1>Terraria</h1>
 				</div>
-				<div class="h__capt-page">
-					<h2><a href="../index.html" title="На главную страницу">Инструменты</a></h2>
+				<div class="h-caption-current-page">
+					<h2>Инструменты</h2>
 				</div>
-				<div class="h__des-text">
+				<div class="h-description-book">
 					<h1>Энциклопедия</h1>
+					<nav class="h-icon">
+						<ul>
+							<li class="hi-link">
+								<a id="first-index" href="../index.html" title="Главная страница"></a>
+							</li>
+							<li class="hi-link">
+								<a id="mw-menu" href="#" title="Алфавитный указатель"></a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div><!-- /top-bar -->
 		</header><!-- /header -->
@@ -45,28 +55,24 @@
 										<caption>Добыча</caption>
 										<tbody>
 											<tr>
-												<td><img src="page/assets/image/Weapons/Pickaxe_All.gif" alt="Кирки"></td>
-												<td><a href="#" title="Кирка">Кирки</a></td>
+												<td><img src="page/Objects/Pickaxes/Pickaxe_All.gif" alt="Кирки"></td>
+												<td><a href="page/Objects/Pickaxes/Pickaxe.html" title="Кирка">Кирки</a> <i>(Pickaxe)</i></td>
 											</tr>
 											<tr>
-												<td><img src="page/assets/image/Weapons/Hammers_All.gif" alt="Молоты"></td>
-												<td><a href="#" title="Молот">Молоты</a></td>
+												<td><img src="page/Objects/Hammers/Hammers_All.gif" alt="Молоты"></td>
+												<td><a href="page/Objects/Hammers/" title="Молот">Молоты</a> <i>(Hammer)</i></td>
 											</tr>
 											<tr>
-												<td><img src="page/assets/image/Weapons/Axes_All.gif" alt="Топоры"></td>
-												<td><a href="#" title="Топор">Топоры</a></td>
+												<td><img src="page/Objects/Axes/Axes_All.gif" alt="Топоры"></td>
+												<td><a href="page/Objects/Axes/" title="Топор">Топоры</a> <i>(Axe)</i></td>
 											</tr>
 											<tr>
-												<td><img src="page/assets/image/Weapons/Boers_All.gif" alt="Буры"></td>
-												<td><a href="#" title="Топор">Топоры</a></td>
+												<td><img src="page/Objects/Drills/Drill_All.gif" alt="Топоры"></td>
+												<td><a href="page/Objects/Drills/" title="Бур">Буры</a> <i>(Drill)</i></td>
 											</tr>
 											<tr>
-												<td><img src="page/assets/image/Weapons/Axes_All.gif" alt="Топоры"></td>
-												<td><a href="#" title="Бур">Буры</a></td>
-											</tr>
-											<tr>
-												<td><img src="page/assets/image/Weapons/Chainsaw_All.gif" alt="Бензопилы"></td>
-												<td><a href="#" title="Бензопила">Бензопилы</a></td>
+												<td><img src="page/Objects/Chainsaws/Chainsaw_All.gif" alt="Бензопилы"></td>
+												<td><a href="page/Objects/Chainsaws/" title="Бензопила">Бензопилы</a> <i>(Chainsaw)</i></td>
 											</tr>
 										</tbody>
 									</table>
@@ -323,9 +329,5 @@
 				</section><!-- /mr-inner-box -->
 			</main><!-- /wm-page-content -->
 		</div><!-- /wrapper-m -->
-		
-
-
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 </html>

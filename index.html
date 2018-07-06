@@ -13,16 +13,24 @@
 		<link rel="stylesheet" href="content/assets/css/style.css">
 	</head>
 	<body class="fx-col bg">
-		
-		<header class="bar">
-			<div class="top-bar">
-				<div class="h__caption-text">
+		<script>
+			document.write('<input id="mw-btn" type="button" name="mw-btn">\n' +
+				'<div id="mwc" class="modal-window--container">\n' +
+				'<div class="mw--inner-box">\n' +
+				'<iframe class="modal__iframe" src="content/Modal_Window.html"></iframe>\n' +
+				'</div>\n' +
+				'</div>\n');
+			document.getElementById("mw-btn").addEventListener('click', function () {
+				document.getElementById("mwc").classList.toggle('show');
+			});
+		</script>
+
+		<header>
+			<div class="header-container-top-bar">
+				<div class="h-caption-logo">
 					<h1>Terraria</h1>
 				</div>
-				<div class="h__capt-page">
-					<h2>Главная страница</h2>
-				</div>
-				<div class="h__des-text">
+				<div class="h-description-book">
 					<h1>Энциклопедия</h1>
 				</div>
 			</div><!-- /top-bar -->
@@ -113,7 +121,7 @@
 										<a href="#" class="link-item" title="Хитрости и советы">Хитрости и советы</a>
 									</li>
 									<li class="l-item">
-										<a href="#" class="link-item" title="Часто задаваемые вопросы">Часто задаваемые вопросы</a>
+										<a href="content/page/FAG/index.html" class="link-item" title="Часто задаваемые вопросы">Часто задаваемые вопросы</a>
 									</li>
 								</ul><!-- /sidebar__list-item -->
 							</div><!-- /block-container-cnt-row -->
@@ -139,10 +147,10 @@
 										<a href="content/Workplaces.html" class="link-item" title="Рабочие места">Рабочие места</a>
 									</li>
 									<li class="l-item">
-										<a href="content/Coins.html" class="link-item" title="Монеты">Монеты</a>
+										<a href="content/page/Objects/Coins/Coins.html" class="link-item" title="Монеты">Монеты</a>
 									</li>
 									<li class="l-item">
-										<a href="content/Ore.html" class="link-item" title="Руды">Руды</a>
+										<a href="content/page/Objects/Ore/Ore.html" class="link-item" title="Руды">Руды</a>
 									</li>
 									<li class="l-item">
 										<a href="#" class="link-item" title="Слитки">Слитки</a>
@@ -251,7 +259,7 @@
 								<ul class="sidebar__list-item">
 									
 									<li class="l-item">
-										<a href="#" class="link-item">Редкость</a>
+										<a href="content/Categories-of-Things.html" class="link-item">Редкость</a>
 									</li>
 									<li class="l-item">
 										<a href="content/Fishing.html" class="link-item">Рыбалка</a>
@@ -411,12 +419,13 @@
 			<div class="footer__author">
 				<p>Skylinker</p>
 			</div>
+			<div class="footer__fag">
+				<a href="content/page/FAG/index.html" title="Помощь по функционалу">F.A.G.</a>
+			</div>
 			<div class="footer__email">
-				<p>E-mail: <span>skylinkertu33@gmail.com</span></p>
+				<p>E-mail: <span title="По вопросам, обращаться написав в почту на указанный адрес, указав тему обращения">skylinkertu33@gmail.com</span></p>
 			</div>
 		</footer><!-- /footer -->
-
-
 
 
 		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

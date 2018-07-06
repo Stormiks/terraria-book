@@ -6,9 +6,9 @@
 	background: #a6ced8;
 	border-radius: 4px;
 	border: 1px solid #3f6a75;
-	float: left;
+	/* float: left; */
 	padding: 4px;
-	width: 250px;
+	max-width: 270px;
 }
 
 .pr-title {
@@ -30,8 +30,9 @@
 
 .pr-workplace-data {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-around;
+	flex-direction: column;
 	padding: 3px;
 }
 
@@ -52,6 +53,7 @@
 .portable-receipt table td {
 	background-color: inherit;
 	border: none;
+	text-align: left;
 }
 
 .portable-receipt table img {
