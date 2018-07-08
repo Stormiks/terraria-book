@@ -10,24 +10,24 @@
 	float: right;
 	padding: 4px;
 	margin: 3px;
-	max-width: 300px;
+	width: 300px;
 }
 
 .portable-infobox.pi-theme-infobox {
 	background-color: #d7e0af;
 	border: 1px solid #9a8631;
-	font-size: 14px;
 	border-radius: 4px;
+	font-size: 14px;
 	text-align: center;
 }
 
 .portable-infobox abbr {
+	border-bottom: 1px dashed #a50000;
 	color: #0d688c;
 	cursor: help;
+	font-size: 14px;
 	text-decoration-line: underline;
 	text-decoration-style: dashed;
-	border-bottom: 1px dashed #a50000;
-	font-size: 14px;
 }
 .portable-infobox p,
 .portable-infobox a {
@@ -50,29 +50,29 @@
 }
 
 .pi-header {
-	color: #fff;
-	text-shadow: 0 0 2px #10101fa6;
 	background: #8c7a38;
+	color: #fff;
 	font-weight: normal;
 	font-size: 15px;
+	letter-spacing: 1.5px;
 	padding: 4px;
 	margin: 0 1px;
-	letter-spacing: 1.5px;
+	text-shadow: 0 0 2px #10101fa6;
 }
 .pi-data {
 	display: flex;
 	flex-direction: row;
-	width: 97%;
 	margin: 4px;
 	padding: 2px;
+	width: 97%;
 }
 
 .pi-data-label {
 	font-family: PTSans-NarrowBold;
 	font-size: 15px;
 	flex-basis: 112px;
-	text-align: left;
 	letter-spacing: 0.6px;
+	text-align: left;
 }
 
 .pi-data-value {
