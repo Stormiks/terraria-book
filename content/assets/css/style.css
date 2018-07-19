@@ -39,7 +39,7 @@ a {
   text-shadow: 0 0 0 #000000a6;
   letter-spacing: 0.2px;
   font-family: Ubuntu;
-  font-size: 17px;
+  font-size: 15px;
   position: relative;
 }
 
@@ -606,7 +606,7 @@ main {
 }
 
 .desc-lang-en {
-	color: #9c7d35;
+	color: #655122;
 	font-family: OpenSansLight-Italic;
 	letter-spacing: 2px;
 }
@@ -990,7 +990,7 @@ td > img {
 .history_list {
 	list-style-type: square;
 	padding-left: 18px;
-	margin: 4px 0;
+	margin: 14px 0;
 }
 
 .history_list p {

@@ -24,6 +24,10 @@
 	padding: 8px;
 }
 
+.inline-table td:nth-child(1) {
+	max-width: 160px;
+}
+
 .inline-table img {
 	margin-right: 4px;
 }
