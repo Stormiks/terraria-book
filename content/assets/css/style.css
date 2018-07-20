@@ -670,6 +670,11 @@ main {
 	float: right;
 }
 
+.float-left {
+	float: left;
+	margin-right: 12px;
+}
+
 .table {
 	display: flex;
 	justify-content: space-around;
@@ -924,6 +929,9 @@ td > img {
 /** End Block of comments **/
 
 /** Container Lists **/
+.list-container {
+	display: flex;
+}
 .list-container > img {
 	margin-right: 25px;
 }
