@@ -980,6 +980,13 @@ td > img {
 	margin: 4px 0;
 }
 
+.list-item li ul {
+	background: #d3dcc6;
+	padding: 6px 6px 6px 30px;
+	box-shadow: -8px 0 7px 0 #b4c79b;
+	border-radius: 4px;
+}
+
 .list-item__li-img > li img {
 	float: left;
 	margin-right: 3px;
