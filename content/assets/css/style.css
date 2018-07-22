@@ -550,7 +550,7 @@ main {
 	color: #3b3d3e;
 	text-decoration: underline solid #000;
 	font-family: PTSans-NarrowBold;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: normal;
 	letter-spacing: 2px;
 }
@@ -1014,10 +1014,11 @@ td > img {
 
 .history_list p b {
 	color: #003a4c;
+	font-family: PTSans-NarrowBold;
+	font-size: 18px;
 	text-decoration: none;
 	text-shadow: -1px 1px 38px #3b7b7b;
 	margin-right: 6px;
-	font-family: PTSans-NarrowBold;
 }
 
 b.сongratulations-text {
