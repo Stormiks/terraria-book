@@ -152,6 +152,12 @@
 				acc[i].onclick = function () {
 					this.classList.toggle("active");
 					this.nextElementSibling.classList.toggle("show");
+					let divLA = this.nextElementSibling;
+					console.log(divLA);
+					setTimeout(function () {
+						divLA.style.transition = 'opacity .4s ease-in-out .1s';
+						divLA.style.opacity = 1;
+					}, 200);
 				};
 			}
 		</script>

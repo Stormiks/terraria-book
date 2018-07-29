@@ -147,6 +147,7 @@ div.list-answer {
 	list-style: none;
 	padding: 1px 10px;
 	margin: -3px 20px 15px 15px;
+	opacity: 0;
 }
 div.list-answer.show {
 	display: block;
@@ -159,7 +160,7 @@ div.list-answer.show {
 	font-weight: normal;
 }
 .list-answer li {
-	color: #ffebcd;
+	color: #6f470c;
 	/* display: none; */
 	font-family: monospace;
 	font-size: 14px;
