@@ -42,8 +42,22 @@
 					<article>
 						<h3 class="accordion">Как произвести поиск на странице предмета по слову или его ID?</h3>
 						<div class="list-answer">
-							<p>Чтобы найти определенный предмет, можете воспользоваться поиском вашего браузера. Для этого нажмите <i>Ctrl + F</i>. В зависимости от браузера в углу страницы появится специальное поле для поиска (<i>Chrome</i> и <i>Yandex</i> — верхний правый угол, <i>Mozilla Firefox</i> — нижний левый угол, <i>Internet Explorer</i> и <i>Opera</i> — верхний левый угол).</p>
+							<p>Чтобы найти определенный предмет, можете воспользоваться поиском вашего браузера. Для этого нажмите <i>Ctrl + F</i>. В зависимости от браузера в углу страницы появится специальное поле для поиска (<i>Chrome</i> и <i>Yandex</i> — верхний правый угол, <i>Mozilla Firefox</i> — нижний левый угол, <i>Internet Explorer</i> (не поддерживается автором энциклопедии) и <i>Opera</i> — верхний левый угол).</p>
 							<p>В это поле нужно ввести название предмета или его часть (на русском).</p>
+							<div id="gal-box" class="gallery">
+								<figure class="gallery-box">
+									<img src="img/Chrome_2018-08-06_12-53-29.jpg" alt="Google Chrom">
+									<figcaption>Google Chrom</figcaption>
+								</figure>
+								<figure class="gallery-box">
+									<img src="img/Mozila_2018-08-06_12-49-28.jpg" alt="Mozila Firefox">
+									<figcaption>Mozila Firefox</figcaption>
+								</figure>
+								<figure class="gallery-box">
+									<img src="img/Opera_2018-08-06_12-50-33.jpg" alt="Opera">
+									<figcaption>Opera</figcaption>
+								</figure>
+							</div>
 						</div>
 					</article>
 					<article>
@@ -134,17 +148,9 @@
 			let genMenu = (text) => {
 				let menuRight = document.getElementById("menuGen");
 				let liListQuest = document.createElement("li");
-				liListQuest.className = "list-question";
+				liListQuest.className = 'list-question';
 				liListQuest.innerHTML = '<a class="link-lq" href="#">' + text + '</a>';
 				menuRight.appendChild(liListQuest);
-
-				let mR = document.getElementsByClassName("link-lq");
-				for (let j = 0; j < mR.length; j++) {
-					mR[j].onclick = function () {
-						this.classList.toggle("active");
-						acc[j].nextElementSibling.classList.toggle("show");
-					}
-				}
 			}
 
 			for (let i = 0; i < acc.length; i++) {
@@ -152,12 +158,6 @@
 				acc[i].onclick = function () {
 					this.classList.toggle("active");
 					this.nextElementSibling.classList.toggle("show");
-					let divLA = this.nextElementSibling;
-					console.log(divLA);
-					setTimeout(function () {
-						divLA.style.transition = 'opacity .4s ease-in-out .1s';
-						divLA.style.opacity = 1;
-					}, 200);
 				};
 			}
 		</script>

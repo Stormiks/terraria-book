@@ -521,6 +521,10 @@ main {
 	padding: 4px;
 	margin: 5px 0;
 }
+.article__content-box:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
 .article__title-text {
 	background-color: #7ccbd4;
